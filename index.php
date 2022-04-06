@@ -13,9 +13,8 @@
 
 		.border{
 			border: 3px  solid;
-
+			margin: 50px;
 		}
-
 
 
 	</style>
@@ -32,7 +31,6 @@
 
 	</div>
 
-
 	<div align="center">
 		
 		<form action="valida.php" method="post">
@@ -42,6 +40,14 @@
 
 			Senha :
 			<input type="text" name="senha" placeholder="Digite sua senha"> <br/><br/>
+
+			  <? if(isset($_GET['login']) && $_GET['login'] == 'erro') {  //Testa se o parametro login setado no metodo header na valida.php está setado e é igual a erro?> 
+
+                    <div class="text-danger">
+                      Usuário ou senha inválido(s)
+                    </div>    
+
+              <? }  ?>     
 
 			<button type="submit">Entrar</button>
 
