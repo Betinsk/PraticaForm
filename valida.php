@@ -44,8 +44,9 @@
    
   else {
     //$_SESSION['autenticado'] = 'NÃO';
-        //força o direcionamento para a pagina 
-        header('Location: index.php?login=erro' ); // 
+
+       
+        header('Location: index.php?login=erro' ); // força o direcionamento para a pagina
     }
 
 
