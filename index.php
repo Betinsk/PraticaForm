@@ -1,3 +1,11 @@
+
+<<?php 
+
+	session_start();
+
+ ?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +15,7 @@
 
 	<style type="text/css">
 		
-				body {
+			body {
 		  background-color: linen;
 		}
 

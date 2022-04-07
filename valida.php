@@ -1,18 +1,6 @@
 
-
-
-
-<html>
-<body>
-
-
-
-</body>
-</html>
-
-
 <?php 
-       // session_start();
+       session_start();
 
         //variavel que verifica se a autenticacao foi realizada
    
@@ -37,15 +25,12 @@
    
 
   if ($usuarioAutenticado == true) {
-      //  $_SESSION['autenticado'] = 'SIM';
-       echo 'Welcome '. $_POST["email"]. '<br>';
-        echo 'Your email address is: '. $_POST["senha"]; 
+       $_SESSION['autenticado'] = 'SIM';
+         header('Location: cadastro.php');
     }
    
   else {
-    //$_SESSION['autenticado'] = 'NÃO';
-
-       
+    $_SESSION['autenticado'] = 'NÃO';
         header('Location: index.php?login=erro' ); // força o direcionamento para a pagina
     }
 
