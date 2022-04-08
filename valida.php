@@ -1,6 +1,6 @@
 
 <?php 
-       session_start();
+        require_once('validador_acesso.php');
 
         //variavel que verifica se a autenticacao foi realizada
    
